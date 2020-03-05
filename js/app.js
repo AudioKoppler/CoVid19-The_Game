@@ -57,6 +57,7 @@ class Player {
         this.collide = new Audio("sound/tick.mp3");
         this.theme = new Audio("sound/gametheme.mp3");
         this.sneeze = new Audio("sound/sneezeSoundEffect.mp3");
+        this.time = new Audio("sound/incubationReached.mp3");
         this.sprite = 'img/char-clever-boy.png'; // Select the default image
 
         this.x = 200; //starting location x axis of the player in the board
@@ -220,6 +221,7 @@ class Player {
 
         (this.life === 0 || this.y === this.axisYstart) ? this.finalDisplay(): this.scoreCalculation();
 
+
     }
 
 
@@ -245,7 +247,6 @@ class Player {
 
 
     finalDisplay() {
-
         modal.style.display = "block";
         this.highScore.innerHTML = this.score; //insert score in popup
 
@@ -257,12 +258,13 @@ class Player {
             this.gem.innerHTML = this.gemStoneone;
         } else {
             this.gem.innerText = 'Sorry, No Infection'; //no gem
+            this.time.play();
         }
 
         this.check += 1;
 
         (this.score < 50) ? this.alertmessage.innerText = 'SORRY YOU ARE MEDICATED! OUTBREAK INTERCEPTED': this.alertmessage.innerText = 'OUTBREAK SUCCESS! YOU INFECTED THE WORLD !!!';
-        this.theme.play();
+
     }
 
 };
