@@ -127,7 +127,7 @@ body {
 
 /**header style**/
 .size {
-    width: 505px;
+    width: 405px;
     margin-bottom: -50px;
 }
 
@@ -159,6 +159,8 @@ body {
     margin: auto;
     padding: 15px;
     margin-top: 10%;
+    box-shadow: rgba(0, 0, 0, 0.363) 3px 5px 3px;
+    border-radius: 10px;
 
 }
 
@@ -177,6 +179,7 @@ body {
     width: 150px;
     margin-left: 25%;
     z-index: -1;
+    padding: 10px;
 }
 
 #subline {
@@ -184,4 +187,5 @@ body {
     margin-top: -1%;
     transform: rotate(-10deg);
     width: 200px;
+    filter: opacity(.7);
 }
