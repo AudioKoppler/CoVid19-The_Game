@@ -247,6 +247,7 @@ class Player {
 
 
     finalDisplay() {
+        this.theme.play();
         modal.style.display = "block";
         this.highScore.innerHTML = this.score; //insert score in popup
 
@@ -264,7 +265,7 @@ class Player {
         this.check += 1;
 
         (this.score < 50) ? this.alertmessage.innerText = 'SORRY YOU ARE MEDICATED! OUTBREAK INTERCEPTED': this.alertmessage.innerText = 'OUTBREAK SUCCESS! YOU INFECTED THE WORLD !!!';
-        this.theme.play();
+
     }
 
 };
