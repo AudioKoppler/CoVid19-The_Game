@@ -14,4 +14,4 @@ function sound(src) {
 };
 
 
-var myMusic = new sound("sound/SneezeSoundEffect.mp3");
+var myMusic = new sound("sound/ResidentEvil(CorpUmbrella).mp3");

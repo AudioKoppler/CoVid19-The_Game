@@ -58,6 +58,7 @@ class Player {
         this.theme = new Audio("sound/gametheme.mp3");
         this.sneeze = new Audio("sound/sneezeSoundEffect.mp3");
         this.time = new Audio("sound/incubationReached.mp3");
+        this.evil = new Audio("sound/ResidentEvil(CorpUmbrella).mp3");
         this.sprite = 'img/char-clever-boy.png'; // Select the default image
 
         this.x = 200; //starting location x axis of the player in the board
