@@ -264,7 +264,7 @@ class Player {
         this.check += 1;
 
         (this.score < 50) ? this.alertmessage.innerText = 'SORRY YOU ARE MEDICATED! OUTBREAK INTERCEPTED': this.alertmessage.innerText = 'OUTBREAK SUCCESS! YOU INFECTED THE WORLD !!!';
-
+        this.theme.play();
     }
 
 };
