@@ -130,14 +130,31 @@ class Player {
             console.log("Cannot move");
 
         } else {
-            (key === 'up') ? this.y -= 81: (key === 'down') ?
-                this.y += 81 : (key === 'right') ?
-                this.x += 100 : (key === 'left') ?
-                this.x -= 100 : console.log("moved");
+            (key === 'up') ?
+            this.y -= 81:
+                (key === 'down') ?
+                this.y += 81 :
+                (key === 'right') ?
+                this.x += 100 :
+                (key === 'left') ?
+                this.x -= 100 :
+                console.log("moved");
             this.move.play()
         }
-
+        /* MY ARROWS 
+        function buttonMove() {
+            (key === 'up') ?
+            this.y -= 81:
+                (key === 'down') ?
+                this.y += 81 :
+                (key === 'right') ?
+                this.x += 100 :
+                (key === 'left') ?
+                this.x -= 100 :
+                console.log("moved");
+        }*/
     }
+
 
 
     checkCollisions() {
@@ -301,8 +318,6 @@ player.playerCollection.forEach(function (players) {
     });
 });
 
-
-
 document.addEventListener('keyup', function (e) {
 
     var allowedKeys = {
@@ -321,3 +336,11 @@ function reLoad() {
     location.reload();
 
 }
+/* MY JQery */
+function replace() {
+    $('body').toggleClass('newBG');
+}
+/* ToolTip */
+$(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+});

@@ -29,7 +29,8 @@
         <!--         <a class="navbar-brand" href="index.html">CoVid19 - The Game <br><i class="text-dark">by HoloGrafixx
                 Media</i></a> -->
         <img class="logo" src="img/rmx/coronavirus_PNG-Images-Transparent-Background.png" alt="">
-        <div class="btn btn-dark border" id="subline">
+        <div onclick="replace()" class="btn btn-dark border" id="subline" data-toggle="tooltip"
+            title="Click to Change BG!">
             OUTBREAK
         </div>
         <div>copyright K.Meyer</div>
@@ -168,6 +169,7 @@
                                 <p>SORRY!! Mobile TouchScreens are not supportet yet! <br>please use your PC/Laptop for
                                     that first Version</p>
                             </div>
+
                         </div>
                         <!--row ends-->
 
@@ -186,6 +188,13 @@
     </div>
     <!--container ends-->
 
+    <!-- <div class="arrows">
+        <button onclick="buttonUp()" ontouchstart="${up}">UP</button><br><br>
+        <button onmousedown="buttonMove('left')" ontouchstart="move('left')">LEFT</button>
+        <button onmousedown="buttonMove('right')" ontouchstart="move('right')">RIGHT</button><br><br>
+        <button onmousedown="buttonMove('down')" ontouchstart="move('down')">DOWN</button> 
+    </div>-->
+
     <!------------------------------------------------------------------------------- -->
 
     <!--script file-->
@@ -193,6 +202,7 @@
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script>
     <script src="js/sound.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
 
 
 </body>
