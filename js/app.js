@@ -58,7 +58,7 @@ class Player {
         this.collide = new Audio("sound/fail.mp3");
         this.theme = new Audio("sound/gametheme.mp3");
         this.sneeze = new Audio("sound/sneezeSoundEffect.mp3");
-        this.time = new Audio("sound/incubationReached.mp3");
+        this.time = new Audio("sound/incubationReached_epic.mp3");
         this.evil = new Audio("sound/ResidentEvil(CorpUmbrella).mp3");
         this.sprite = 'img/char-clever-boy.png'; // Select the default image
 
