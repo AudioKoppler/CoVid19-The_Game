@@ -54,7 +54,8 @@ class Enemy {
 class Player {
 
     constructor() {
-        this.collide = new Audio("sound/tick.mp3");
+        this.move = new Audio("sound/tick.mp3");
+        this.collide = new Audio("sound/fail.mp3");
         this.theme = new Audio("sound/gametheme.mp3");
         this.sneeze = new Audio("sound/sneezeSoundEffect.mp3");
         this.time = new Audio("sound/incubationReached.mp3");
@@ -133,7 +134,7 @@ class Player {
                 this.y += 81 : (key === 'right') ?
                 this.x += 100 : (key === 'left') ?
                 this.x -= 100 : console.log("moved");
-
+            this.move.play()
         }
 
     }
@@ -312,7 +313,6 @@ document.addEventListener('keyup', function (e) {
     };
 
     player.handleInput(allowedKeys[e.keyCode]);
-
 });
 
 
